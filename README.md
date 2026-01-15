@@ -1,37 +1,52 @@
 # Time_Series_msc-da-sept-24-sem-2-ca2
+Got it — here is a **tight, to-the-point GitHub README**, no academic padding, no excess prose, and **explicitly including recursive forecasting, YCSB, and Kafka-style streaming**.
 
-## 📈 Scalable Stock Price Prediction Framework
+---
 
-This project presents a scalable and integrated framework for **stock price prediction** using **NoSQL databases, distributed computing, time series analysis, and deep learning**.
+# 📈 Scalable Stock Price Prediction with Big Data & Deep Learning
 
-### 🔍 Overview
+End-to-end stock price prediction system combining **NoSQL databases**, **distributed computing**, **time series forecasting**, and **deep learning**.
 
-Stock price prediction is inherently challenging due to market volatility and complex temporal dynamics. This project combines **MongoDB**, **Apache Spark**, **classical time series models**, and **deep learning (LSTM)** to efficiently process large-scale historical stock data and improve predictive performance.
+## 🚀 Overview
 
-### 🏗️ Architecture & Technologies
+This project implements a **scalable big data architecture** for stock price prediction using historical market data and social sentiment. It integrates **MongoDB**, **Apache Spark**, **time series models**, and **LSTM networks**, with support for **batch and near real-time streaming pipelines**.
 
-* **MongoDB (NoSQL):** Flexible and scalable storage for large volumes of historical stock data
-* **Apache Spark:** Distributed data preprocessing and large-scale computation
-* **Time Series Models:** Implemented using `statsmodels` (e.g. ARIMA/SARIMA) to capture temporal structure
-* **Deep Learning:** LSTM networks built with **TensorFlow** to model complex sequential dependencies
+## 🏗️ Architecture
 
-### ⚙️ Key Features
+* **Storage:** MongoDB (NoSQL, schema-flexible)
+* **Processing:** Apache Spark (RDDs, DAG execution, in-memory computation)
+* **Streaming:** Kafka-style simulated pipeline (Reddit API → Spark)
+* **Modeling:** SARIMAX, Recursive Forecasting, LSTM
+* **Benchmarking:** YCSB (MongoDB vs MySQL vs Cassandra)
 
-* Distributed data processing for scalability and performance
-* Hybrid modeling approach combining statistical and deep learning methods
-* End-to-end pipeline from data ingestion to forecasting
-* Comparative analysis between traditional time series and deep learning models
+## 🛠️ Key Features
 
-### 📊 Results
+* Distributed data ingestion and preprocessing with Spark
+* NoSQL performance benchmarking using **YCSB workloads A, B, C**
+* **SARIMAX** with exogenous sentiment variables
+* **Recursive multi-step forecasting** using SKForecast
+* **Multivariate LSTM** models with TensorFlow & Keras Tuner
+* Near real-time sentiment streaming inspired by **Apache Kafka**
+* Interactive visualizations following **Tufte’s data-ink principles**
 
-Time series and LSTM models demonstrate strong capability in capturing temporal dependencies, with **deep learning models outperforming traditional machine learning approaches** in predictive accuracy.
+## 📊 Models Implemented
 
-### 🚀 Use Cases
+* **SARIMAX** (seasonality + exogenous variables)
+* **Recursive Forecasting** (multi-step horizon prediction)
+* **LSTM** (multivariate deep learning model)
 
-* Financial time series forecasting
-* Large-scale market data analysis
-* Research and experimentation with hybrid predictive models
+## ⚙️ Benchmarks & Evaluation
 
-### 🛠️ Tech Stack
+* Database performance evaluated using **YCSB**
+* Metrics: throughput, latency, runtime, percentile latency
+* MongoDB demonstrated superior performance across mixed read/write workloads
 
-`Python` · `MongoDB` · `Apache Spark` · `Statsmodels` · `TensorFlow` · `Pandas` · `NumPy`
+## 📈 Data Sources
+
+* Historical stock prices (FAANG)
+* Reddit sentiment data (`r/stocks`) via PRAW
+* Simulated streaming batches for real-time analysis
+
+## 🧰 Tech Stack
+
+`Python` · `MongoDB` · `Apache Spark` · `YCSB` · `TensorFlow` · `Statsmodels` · `SKForecast` · `Pandas` · `NumPy`

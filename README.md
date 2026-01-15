@@ -24,7 +24,7 @@ This project implements a **scalable big data architecture** for stock price pre
 * **Recursive multi-step forecasting** using SKForecast
 * **Multivariate LSTM** models with TensorFlow & Keras Tuner
 * Near real-time sentiment streaming inspired by **Apache Kafka**
-* Interactive visualizations following **Tufte’s data-ink principles**
+* Interactive visualizations utlising Streamlit**
 
 ## 📊 Models Implemented
 

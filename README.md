@@ -1,7 +1,4 @@
 # Time_Series_msc-da-sept-24-sem-2-ca2
-Got it — here is a **tight, to-the-point GitHub README**, no academic padding, no excess prose, and **explicitly including recursive forecasting, YCSB, and Kafka-style streaming**.
-
----
 
 # 📈 Scalable Stock Price Prediction with Big Data & Deep Learning
 
